@@ -1,0 +1,19 @@
+/* This file will describe the Build process of C++ code .
+
+Phases of Building a project
+1) Clean the Project - This will delete all the previously build object files
+2) Build - Convert the Cpp file (Human readable code to Machine Code) to binary
+   code for processing . After build process we will have *.obj file . In
+   windows extension may be .obj and in mac it may be .o . It varies from
+   OS to OS .
+3) Run the project - Executing the object file .
+*/
+
+
+/*
+Different types of errors
+1) Compile errors
+2) Linker errors
+3) Run time errors
+
+*/

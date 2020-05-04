@@ -1,0 +1,36 @@
+Every c++ program must contain main() function
+Its starting part of execution
+return 0 for successful completion
+
+2 version which are both valid :
+
+Version 1 :
+=================================================
+int main()
+{
+
+// lines of code
+
+return 0;
+}
+=> program.exe
+Version 2 :
+===========================================================
+int main(int argc,char *argv[])
+{
+// code
+return 0;
+
+}
+
+=> program.exe argument1 argument2
+
+argc => integer defining no of elements in the array
+argv => argument vector
+
+This version of main is used for passing the command line arguments.
+
+
+==================================================
+
+*****NOTE : main method is called by OS

@@ -1,0 +1,14 @@
+Preprocessor Directives :
+
+  It start with # symbol
+
+  #include <iostream> => header file existing in lib
+  #include "myfile.h" ===> header file created by user
+
+
+Comments :
+
+Single line comment : // --> comment 
+Multi line comment : /* */ -> Multi line comment
+
+Compiler will never sees the comment

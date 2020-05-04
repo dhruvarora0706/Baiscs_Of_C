@@ -13,7 +13,18 @@ Phases of Building a project
 /*
 Different types of errors
 1) Compile errors
+Programming language have rules .
+  . Syntax error - something wrong with structure
+  . Semantic error - something wrong with the meaning .
+
 2) Linker errors
+  . The linker is having trouble linking all the object files creating the
+    executable file .
+  . Usually it happens when the library or object file is missing .
+
 3) Run time errors
+This errors occurs when code is executing . We use exception handling to catch
+the run time errors .
+Common example of run time error is : Divide by zero errors.
 
 */

@@ -1,0 +1,68 @@
+why std::cout and not just cout ?
+what is name conflicting ?
+
+Names given to parts of code to help reducing naming conflicts.
+std is the name of C++ 'standard' namespaces .
+
+Third party frameworks will have there own namespaces
+
+Scope resolution operator ::
+
+How can we use namespaces ?
+
+namespaces can be thought of as a container of code  .
+
+cout can be defined in multiple namespaces therefore to resolve the
+
+conflict we use std::cout ===> which means we are using cout from standard lib .
+
+
+
+There are three versions of using namespaces
+
+Version 1:
+
+# include <iostream>
+
+int main()
+{
+  std::cout<<"hello world";
+  std::cout<<"hiii";
+  std::cout<<"bye";
+  return 0;
+}
+
+Version 2 :
+
+# include <iostream>
+using namespace std;
+// Use the entire std namespace .=> This will bring all the
+//elements present in namespace std . So here the possibility of name collission
+//is high
+
+int main(){
+
+cout<<"hello world";
+cout<<"hii";
+cout<<"bye"
+}
+
+Version 3 :
+#include <iostream>
+
+using namespace std::cout;
+using namespace std::cin;
+using namespace std::endl;
+/*
+Here all the elements from namespace is not brought in this code .
+Only cout cin and endl are brought from std library .
+*/
+int main()
+{
+int num;
+cout<<"hello world";
+cout<<"hii";
+cin>>num;
+cout<<num;
+cout<<"bye"<<endl;
+}

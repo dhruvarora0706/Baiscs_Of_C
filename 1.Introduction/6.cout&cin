@@ -1,0 +1,37 @@
+# include<iostream>
+using namespace std;
+
+int main()
+{
+    int num1;
+    char num2;
+    cout<<" Enter the num1 :";
+    cin>>num1;
+    cout<<"Enter the num2 :";
+    cin>>num2;
+    cout<<" The num1 is :"<<num1<<" and num2 is :"<num2;
+    return 0;
+}
+
+
+/*
+Enter the num1:10.55 => Entered 10.55
+Enter the num2:=> promt will not hold here
+The num1 is 10 and num2 is 10.55
+
+Here what happens is that a buffer is created and it stores
+ 10 first and allocates to num1 and then when it tries to
+read a double type number it finds it in the console i.e 0.55
+therefore it does not stop the promt and prints it .
+*/
+
+/*
+Enter the num1:10.a => Entered 10.a
+Enter the num2: Promt will not hold here
+ The num1 is 10 and num2 is 0.
+=> it creates a buffer and saves 10.a and now
+ read comes for num1 , it reads 10 and go to
+  next step . Here it is expecting double integer
+  which it got as ".a" which is not double. There
+fore it saves 0 as default value
+*/
